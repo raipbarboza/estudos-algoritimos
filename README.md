@@ -1,47 +1,73 @@
-# Estudos de algoritmos
+# estudos-algoritimos
 
-Repositório para estudar algoritmos e estruturas de dados, organizado do mais simples ao mais avançado. Os exemplos estão em **Python 3.10+** (usa anotações como `int | None`).
+Estudos práticos de algoritmos e lógica de programação baseados no livro **Entendendo Algoritmos** de Aditya Y. Bhargava, com implementações em Python.
 
-## Pré-requisitos
+---
 
-- [Python 3.10](https://www.python.org/downloads/) ou superior instalado e disponível no `PATH` como `python`.
+## Sobre o livro
 
-## Como executar um exemplo
+**Entendendo Algoritmos: Um guia ilustrado para programadores e outros curiosos** é um dos melhores pontos de entrada para algoritmos — sem páginas de provas matemáticas, com ilustrações e exemplos práticos em Python. O livro cobre desde pesquisa binária e notação Big O até grafos, programação dinâmica e algoritmos gulosos.
 
-Na raiz do projeto:
+---
 
-```powershell
-python 01_fundamentos\busca_linear.py
-```
+## Estrutura do repositório
 
-Em sistemas Unix:
-
-```bash
-python3 01_fundamentos/busca_linear.py
-```
-
-## Estrutura do projeto
+Os arquivos `.py` serão adicionados gradualmente conforme o estudo de cada capítulo.
 
 | Pasta | Tema | Ficheiro |
-|--------|------|----------|
-| `01_fundamentos` | Percorrer dados, noção de custo temporal | `busca_linear.py` |
-| `02_busca` | Dividir para conquistar em vetor ordenado | `busca_binaria.py` |
-| `03_ordenacao` | Ordenação por comparação | `insertion_sort.py` |
-| `04_estruturas` | Fila FIFO | `fila.py` |
-| `05_recursao_dp` | Recursão com memoização | `fib_memo.py` |
-| `06_grafos` | Percursos em grafos (BFS) | `bfs_adj_list.py` |
+|-------|------|----------|
+| `cap01-introducao` | Pesquisa binária e notação Big O | `pesquisa_binaria.py` |
+| `cap02-ordenacao` | Ordenação por seleção - arrays e listas encadeadas | `ordenacao_selecao.py` |
+| `cap03-recursao` | Recursão - funções que chamam a si mesmas | `fatorial_recursivo.py` |
+| `cap04-quicksort` | Dividir e conquistar - Quicksort | `quicksort.py` |
+| `cap05-tabelas-hash` | Tabelas hash - dicionários em Python | `tabela_hash.py` |
+| `cap06-pesquisa-em-largura` | Grafos e busca em largura (BFS) | `bfs_grafos.py` |
+| `cap07-dijkstra` | Algoritmo de Dijkstra - caminhos mínimos | `dijkstra.py` |
+| `cap08-algoritmos-gulosos` | Algoritmos gulosos - cobertura de conjuntos | `conjuntos_guloso.py` |
+| `cap09-programacao-dinamica` | Programação dinâmica - problema da mochila | `mochila_dp.py` |
+| `cap10-knn` | K-vizinhos mais próximos (KNN) - classificação | `knn_classificacao.py` |
+| `extras` | Jogos e exemplos extras | `jogo_adivinhacao.py` |
 
-## Roteiro sugerido (para ir acrescentando código)
+---
 
-1. **Fundamentos:** notação assintótica (O, Ω, Θ), invariantes de loop.
-2. **Busca:** variantes de busca binária (primeira/última posição, resposta em espaço contínuo).
-3. **Ordenação:** merge sort, quick sort, counting sort; estabilidade e casos de uso.
-4. **Estruturas:** pilha, deque, heap, trie, Union-Find.
-5. **Recursão e DP:** backtracking, tabelas bottom-up, problemas clássicos (mochila, LIS, distância de edição).
-6. **Grafos:** DFS, caminhos mínimos (Dijkstra), ordenação topológica, SCC (avançado).
+## Progresso
 
-Cada novo tópico pode ganhar um ficheiro `.py` na pasta correspondente, com um bloco `if __name__ == "__main__":` para testar à mão.
+| Capítulo | Tema | Status |
+|----------|------|--------|
+| 01 | Introdução a algoritmos — pesquisa binária e notação Big O | ⬜ Pendente |
+| 02 | Ordenação por seleção — arrays e listas encadeadas | ⬜ Pendente |
+| 03 | Recursão | ⬜ Pendente |
+| 04 | Quicksort — dividir e conquistar | ⬜ Pendente |
+| 05 | Tabelas hash | ⬜ Pendente |
+| 06 | Pesquisa em largura (BFS) e grafos | ⬜ Pendente |
+| 07 | Algoritmo de Dijkstra | ⬜ Pendente |
+| 08 | Algoritmos gulosos | ⬜ Pendente |
+| 09 | Programação dinâmica | ⬜ Pendente |
+| 10 | K-vizinhos mais próximos (KNN) | ⬜ Pendente |
 
-## Licença
+**Legenda:** ⬜ Pendente / 🟡 Em andamento / ✅ Concluído
 
-Uso livre para estudo pessoal.
+---
+
+## Conexão com os projetos principais
+
+Os algoritmos estudados aqui têm aplicação direta nos projetos de dados ESG:
+
+| Algoritmo | Aplicação no CarbonTrack BR |
+|-----------|-----------------------------|
+| Pesquisa binária | Busca eficiente em grandes datasets de emissões |
+| Tabelas hash | Cruzamento rápido CVM × ISE por CNPJ |
+| BFS / Grafos | Mapeamento de cadeia de fornecedores (Scope 3) |
+| KNN | Classificação de empresas por perfil de risco ESG |
+| Programação dinâmica | Otimização de portfólios de crédito de carbono |
+
+---
+
+## Como executar
+
+```bash
+git clone https://github.com/raipbarboza/estudos-algoritimos.git
+cd estudos-algoritimos
+
+# Executar um exemplo (quando os arquivos forem adicionados)
+python cap01-introducao/pesquisa_binaria.py
